@@ -30,18 +30,4 @@ class elem():
     addtocart_btn = "add-to-cart-button-13"
     tab_shoppingcart = "//span[text()='Shopping cart']"
 
-    # cart_product = "//img[@title='Show details for $25 Virtual Gift Card']"
-    # addtocard_btn = "add-to-cart-button-31"
-   
-    # cb_shopcahrt = "//input[@type='checkbox']"
-    # cb_agree_shopcart = "termsofservice"
-    # checkout_btn = "checkout"
-    # billing_address_city = "BillingNewAddress_City" #ID
-    # billing_address1 = "BillingNewAddress_Address1" #ID
-    # postalcode = "BillingNewAddress_ZipPostalCode" #ID
-    # phonenumber = "BillingNewAddress_PhoneNumber" #ID
-    # continue_checkout_btn = "//input[@title='Continue']" #XPATH
-    # checkout_title = "//h1[text()='Checkout']"
-    # recipient_name = "giftcard_2_RecipientName" #ID
-    # recipient_email = "giftcard_2_RecipientEmail" #ID
 

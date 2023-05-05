@@ -18,6 +18,3 @@ class input():
     verify_emptyemail = "Email is required."
     verify_emptypwd = "Password is required."
     verify_pwdnotmatch = "The password and confirmation password do not match."
-
-#### Add to cart - Checkout ####
-    verify_checkout = "Checkout"    

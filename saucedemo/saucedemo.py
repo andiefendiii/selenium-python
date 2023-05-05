@@ -28,17 +28,17 @@ class PythonOrgSearch(unittest.TestCase):
         driver.find_element(By.ID, "password").send_keys("secret_sauce")
         driver.find_element(By.ID, "login-button").click()
         data = driver.find_element(By.XPATH, "//h3[@data-test='error']").text
-        self.assertEqual(data, "Epic sadface: Username and password do not match any user in this servic")
+        self.assertEqual(data, "Epic sadface: Username and password do not match any user in this service")
         
 
-    # def test_loginFailedPassword(self):
-    #     driver = self.driver
-    #     driver.get("https://www.saucedemo.com/")
-    #     driver.find_element(By.ID, "user-name").send_keys("locked_out_user")
-    #     driver.find_element(By.ID, "password").send_keys("secret_sauc")
-    #     driver.find_element(By.ID, "login-button").click()
-    #     data = driver.find_element(By.XPATH, "//h3[@data-test='error']").text
-    #     self.assertIn(data, "Epic sadface: Username and password do not match any user in this service")     
+    def test_loginFailedPassword(self):
+        driver = self.driver
+        driver.get("https://www.saucedemo.com/")
+        driver.find_element(By.ID, "user-name").send_keys("locked_out_user")
+        driver.find_element(By.ID, "password").send_keys("secret_sauc")
+        driver.find_element(By.ID, "login-button").click()
+        data = driver.find_element(By.XPATH, "//h3[@data-test='error']").text
+        self.assertIn(data, "Epic sadface: Username and password do not match any user in this service")     
 
 
     def tearDown(self):
